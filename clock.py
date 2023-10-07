@@ -11,7 +11,7 @@ my_w.geometry(d)
 my_w.title("Analog Clock")
 c1 = tk.Canvas(my_w, width=c_width, height=c_height,bg='black')
 c1.grid(row=0,column=0,padx=5,pady=5,columnspan=3)
-dial=c1.create_oval(10, 10, 600, 600,width=15,outline='orange',fill='#FFFFFF')
+dial=c1.create_oval(10, 10, 600, 600,width=15,outline='blueviolet',fill='black')
 x,y=305,305 
 x1,y1,x2,y2=x,y,x,10 
 center=c1.create_oval(x-8,y-8,x+8,y+8,fill='#c0c0c0')
@@ -26,7 +26,7 @@ in_degree_m=int(time.strftime('%M'))*6
 in_degree_h=int(time.strftime('%I')) * 30 
 if(in_degree_h==360):
     in_degree_h=0 
-h=iter(['12','1','2','3','4','5','6','7','8','9','10','11'])
+h=iter(['XII','I','II','III','IV','V','VI','VII','VIII','IX','X','XI'])
 
 for i in range(0,60):
     in_radian = math.radians(in_degree)
